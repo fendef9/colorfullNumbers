@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(137, 145, 69);
+}
+div{
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+}
+button{
+    margin: 20px 0;
+    width: 500px;
+    height: 40px;
+    background-color: darkslategrey;
+    color: whitesmoke;
+    font-size: large;
+}
+a:link{
+    color: whitesmoke;
+}
+a:visited{
+    color: yellow;
+}
