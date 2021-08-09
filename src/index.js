@@ -28,7 +28,7 @@ const create = function (color) {
   return fragment;
 };
 const handler = function (e) {
-  let target = e.target.id;
+  const target = e.target.id;
   if (target === `greyButton`) {
     const res = create(false);
     grey.innerHTML = ``;
@@ -46,4 +46,4 @@ if (colorButton) {
   greyButton.addEventListener(`click`, handler);
 }
 
-console.log(process.env.PHRASE)
+console.log(process.env.PHRASE);

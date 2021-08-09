@@ -1,4 +1,10 @@
 {
     "parser": "babel-eslint",
-    "extends": ["airbnb"]
+    "extends": ["airbnb"],
+    "rules": {
+      "quotes":[2,"backtick"],
+      "no-plusplus":[2,{ "allowForLoopAfterthoughts": true } ],
+      "no-undef":[1],
+      "no-shadow":[1]
+    }
   }
