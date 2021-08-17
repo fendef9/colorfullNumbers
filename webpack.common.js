@@ -1,27 +1,25 @@
 const path = require('path');
- const HtmlWebpackPlugin = require('html-webpack-plugin');
- const MiniCssExtractPlugin = require('mini-css-extract-plugin');
- 
 
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
  module.exports = {
    entry: {
-     app: ['./src/index.js','./src/main.css'],
+     index: ['./src/index.js'],
    },
    plugins: [
     new HtmlWebpackPlugin({
-      title: 'Numbers In Grey',
-      template: './src/indexGrey.html',
-      filename: 'indexGrey.html',
+      template: './src/about.pug',
+      filename: "credits.html"
     }), 
     new HtmlWebpackPlugin({
-       title: 'Numbers In Color',
-       template: './src/index.html',
-       filename: 'index.html',
+       template: './src/index.pug',
+       filename: "index.html"
      }),
      new MiniCssExtractPlugin({
-      filename: '[name].css',
-  }),
+       
+     })
+
    ],
    output: {
      filename: '[name].bundle.js',
@@ -31,8 +29,32 @@ const path = require('path');
    module:{
     rules: [
       {
+        test: /\.(png|jp(e?)g|gif)$/i,
+        use:{
+          loader:"file-loader",
+          options:{
+            name: "[name].[ext]",
+            outputPath: "imgs"
+          }
+        }
+      },
+      {
+        test: /\.wav$/i,
+        use:{
+          loader:"file-loader",
+          options:{
+            name: "[name].[ext]",
+            outputPath: "sounds"
+          }
+        }
+      },
+      {
+        test: /\.pug$/i,
+        use:["pug-loader"]
+      },
+      {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        use: [MiniCssExtractPlugin.loader, {loader:"css-loader",options:{url:false}}],
       },
       {
         test: /\.m?js$/,

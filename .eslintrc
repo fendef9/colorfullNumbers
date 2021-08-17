@@ -5,6 +5,8 @@
       "quotes":[2,"backtick"],
       "no-plusplus":[2,{ "allowForLoopAfterthoughts": true } ],
       "no-undef":[1],
-      "no-shadow":[1]
+      "no-shadow":[1],
+      "no-unused-expressions":[1]
+
     }
   }

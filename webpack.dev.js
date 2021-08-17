@@ -11,6 +11,7 @@ const { merge } = require('webpack-merge');
      contentBase: './dist',
    },
    plugins:[
+
     new EnvironmentPlugin({
       PHRASE:'Тут может быть ваша реклама'
     }),
@@ -22,7 +23,10 @@ const { merge } = require('webpack-merge');
       encoding: 'utf-8',            
       extensions: [ ".js", ".ts" ] 
     }),
-    new ESLintPlugin(),
+
+    new ESLintPlugin({
+      fix:true
+    }),
    ]
    
  });

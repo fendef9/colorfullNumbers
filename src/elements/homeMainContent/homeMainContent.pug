@@ -1,0 +1,51 @@
+div.main
+    div.card
+        div.card__text
+            <h2>CowSay</h2>
+            <p>
+                |cowsay is a program that generates ASCII art pictures of a cow with a message.
+                |It can also generate pictures using pre-made images of other animals, 
+                |such as Tux the Penguin, the Linux mascot. It is written in Perl. 
+                |There is also a related program called cowthink, with cows with thought bubbles 
+                |rather than speech bubbles. .cow files for cowsay exist which are able to produce 
+                |different variants of "cows", with different kinds of "eyes", and so forth. 
+                |It is sometimes used on IRC, desktop screenshots, and in software documentation. 
+                |It is more or less a joke within hacker culture, but has been around long enough 
+                |that its use is rather widespread. In 2007, it was highlighted as a Debian package 
+                |of the day.
+            </p>
+            <p>
+                |Original author:Tony Monroe;<br>
+                |Stable release: 3.03 / May 28, 1999; <sup>22 years ago</sup><br>
+                |Repository:	github.com/tnalpgge/rank-amateur-cowsay;<br>
+                |Written in:	Perl;<br>
+                |Operating system: Cross-platform;<br>
+                |Available in: English;<br>
+                |License: Artistic License / GNU General Public License;<br>
+                |Website:nog.net:80/~tony/warez/cowsay.shtml (not working);
+            </p>
+
+            <h2>Example</h2>
+            <p>
+                The Unix command fortune can also be piped into the cowsay command:
+                <code class="card__text-code">[user@hostname ~]$ fortune | cowsay</code>
+            </p>
+
+            <h2>Parameters</h2>
+            <pre class="table">
+            | Id |  Option  |                                         Purpose                                                     |
+            |--------------------------------------------------------------------------------------------------------------------|
+            | 0  | <span class="card__table_yellow">-n</span>       | Disables word wrap, allowing the cow to speak FIGlet or to display other embedded ASCII art.        |
+            | 1  | <span class="card__table_yellow">-W</span>       | Specifies width of the speech balloon in columns, i.e. characters in a monospace font.              |
+            | 2  | <span class="card__table_yellow">-b</span>       | “Borg mode”, uses == in place of oo for the cow′s eyes.                                             |
+            | 3  | <span class="card__table_yellow">-d</span>       | “Dead”, uses XX, plus a descending U to represent an extruded tongue.                               |
+            | 4  | <span class="card__table_yellow">-g</span>       | “Greedy”, uses $$.                                                                                  |
+            | 5  | <span class="card__table_yellow">-p</span>       | “Paranoid”, uses @@.                                                                                |
+            | 6  | <span class="card__table_yellow">-s</span>       | “Stoned”, uses ** to represent bloodshot eyes, plus a descending U to represent an extruded tongue. |
+            | 7  | <span class="card__table_yellow">-t</span>       | “Tired”, uses --.                                                                                   |
+            | 8  | <span class="card__table_yellow">-w</span>       | “Wired”, uses OO.                                                                                   |
+            | 9  | <span class="card__table_yellow">-y</span>       | “Youthful”, uses .. to represent smaller eyes.                                                      |
+
+            </pre>           
+            <p class="card__status">status: <span class="card__status_green">COMPLETE</span>.</p>
+                
