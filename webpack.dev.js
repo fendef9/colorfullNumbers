@@ -8,7 +8,9 @@ const { merge } = require('webpack-merge');
    mode: 'development',
    devtool: 'inline-source-map',
    devServer: {
-     contentBase: './dist',
+    client: {
+      overlay: false,
+    },   
    },
    plugins:[
 

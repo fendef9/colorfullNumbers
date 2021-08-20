@@ -1,5 +1,4 @@
 const path = require('path');
-
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
@@ -8,6 +7,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
      index: ['./src/index.js'],
    },
    plugins: [
+     
     new HtmlWebpackPlugin({
       template: './src/about.pug',
       filename: "credits.html"
@@ -24,6 +24,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
    output: {
      filename: '[name].bundle.js',
      path: path.resolve(__dirname, 'dist'),
+     publicPath: "/",
      clean: true,
    },
    module:{
@@ -34,7 +35,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
           loader:"file-loader",
           options:{
             name: "[name].[ext]",
-            outputPath: "imgs"
+            outputPath: "img",
           }
         }
       },
@@ -53,8 +54,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
         use:["pug-loader"]
       },
       {
-        test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, {loader:"css-loader",options:{url:false}}],
+        test: /\.s[ac]ss$/i,
+        use: [MiniCssExtractPlugin.loader, {loader:"css-loader",options:{url:false}},"sass-loader"],
       },
       {
         test: /\.m?js$/,

@@ -1,0 +1,114 @@
+.animated-background{
+    position: fixed;
+    top:0;
+    width: 100vw;
+    height:calc (auto - 10%);
+    opacity: 20%;
+    z-index: -1;
+}
+
+.epic{
+    font-family: monospace;
+    position: fixed;
+    right:3vw;
+    top: 30px;
+    transform: rotate(30deg);
+    text-decoration: underline;
+    font-weight: 900;
+    font-size: 1vw;
+    color: #FABE0E;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: epic;
+    animation-timing-function: linear;
+    z-index: 5;
+}
+.epic:hover{
+    color:  white;
+}
+
+@keyframes epic{
+    0%{
+        font-size: 1vw;
+    }
+    50%{
+        font-size: 1.2vw;
+    }
+    100%{
+        font-size: 1vw;
+    }
+}
+ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    
+    li{
+        list-style-type: none;
+        color: white;
+        margin:0 4vw;
+        font-size: 1.5vw;
+        font-weight: 900;
+    
+        &:hover{
+            color:#12BCB0
+        }
+    }
+}
+
+.menu{
+    box-shadow: 0px 5px 10px 2px rgba(192, 205, 214, 0.486);
+    border: 1px solid; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 97vw;
+    margin-top: 1vw;
+    padding: 10px 0;
+
+    h1{
+        color: rgba(170, 49, 154, 0.904);
+        font-weight: 900;
+        font-size: 3vw;
+        margin: 0;
+    }
+}
+
+.logo__text{
+    font-size: 2vw;
+    background: linear-gradient(135deg, #12BCB0 20%, #FABE0E 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    padding: 0.3em 0.6em ;
+    border: 3px solid transparent;
+    border-image: linear-gradient(135deg, #12BCB0 20%, #FABE0E 70%);
+    border-image-slice: 1;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+
+    &:visited{
+        text-decoration: none;
+    color: inherit
+    }
+
+    &:hover{
+        color:#12BCB0 
+    }
+}
+@media screen and (max-width:425px) {
+    .epic{
+        display: none;
+    } 
+  }  
