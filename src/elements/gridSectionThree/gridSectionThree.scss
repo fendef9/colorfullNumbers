@@ -1,0 +1,42 @@
+.gridSectionThree{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 97vw;
+    margin-top: 2vw;
+    border: 2px rgb(3, 196, 255) solid;
+    border-radius: 5px;
+    height: 25vw;
+    .gridSectionThree__imgElement{
+        color:white;
+        font-size: 5vw;
+        align-self: center;
+        justify-self: center;
+        font-size: 5vw;
+
+    }
+    .gridSectionThree__textElement{
+        height: 100%;
+        color:white;
+        text-align: justify;
+        background-color: rgba(0, 0, 0, 0.39);
+        padding: 0 4vw;
+
+        h2{
+            font-size: 1.5vw; 
+        }
+        p{
+            font-size: 1vw; 
+        }
+        div{
+            span{
+                font-size: 1vw; 
+            }
+           
+            max-width: fit-content;
+            padding:0 0.5vw;
+            background-color: rgb(32, 190, 111);
+            font-size: larger;
+            border-radius: 5px;
+        }
+    }
+}

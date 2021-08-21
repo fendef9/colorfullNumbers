@@ -16,7 +16,7 @@
     @include flex(unset,center,column);
     background-image: url("./img/starfield.jpg");
     background-repeat:round;
-    background-position: center;
+    background-position: top;
     overflow-x: hidden;
     position: relative;
     margin-top: 0;
@@ -86,4 +86,7 @@ body{
 }
 .background_hide-for-load{
     display: none;
+}
+.main-grid{
+    display: grid;
 }

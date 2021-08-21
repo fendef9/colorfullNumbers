@@ -1,0 +1,17 @@
+.gridSectionTwo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2vw;
+    width: 97vw;
+    margin-top: 2vw;
+
+    .gridSectionTwo__elements{
+        border: 2px rgb(255, 3, 255) solid;
+        border-radius: 5px;
+        height: 9vw;
+        color:white;
+        font-size: 4vw;
+        text-align: center;
+
+    }
+}

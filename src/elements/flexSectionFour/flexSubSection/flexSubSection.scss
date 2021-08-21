@@ -1,0 +1,21 @@
+.flexSubSection{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    font-size: 1vw;
+    border:2px solid black;
+    
+    
+    .flexSubSection__img{
+        height: 10vw;
+        background-color: rgba(0, 0, 0, 0.733);
+    }
+    .flexSubSection__text{
+        padding:0 2vw;
+        margin: 0;
+        font-size: 1vw;
+        span{
+            color:red
+        }
+    }
+}

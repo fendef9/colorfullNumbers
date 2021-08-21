@@ -1,0 +1,49 @@
+.flexSectionFour{
+    display: flex;
+    flex-direction: column;
+    width: 97vw;
+    margin-top: 2vw;
+    color: white;
+  
+    .flexSectionFour__buttonElement{
+        font-size: 1vw;
+        width: fit-content;
+        height: 50px;
+        padding: 0 3vw;
+        border: 3px solid;
+        border-radius: 20px;
+        background-color: transparent;
+        border-color: rgb(0, 217, 255);
+        color: rgb(0, 217, 255);
+        &:hover{
+            border-color: white;
+            color: white;
+        }
+        align-self: flex-end
+    }
+
+    .flexSectionFour__textElement{
+        font-size: 10vw;
+        align-self: center;
+        margin: 0;
+        -webkit-text-stroke: 0.1vw #ffffff;
+        mix-blend-mode: difference;
+        color: black;
+        z-index: -2;
+
+    }
+    .flexSectionFour__subElement{
+        display: flex;
+        justify-content: space-between;
+        margin-top: -4.5vw;
+        margin-bottom: 10px;
+        
+    }
+    @for $i from 1 through 3 {
+        .flexSubSection:nth-of-type(#{$i}){
+            margin-right: 2vw;
+        }
+    }
+}
+
+    

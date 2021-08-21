@@ -1,0 +1,20 @@
+.subSection{
+    display: grid;
+    border-radius: 5px;
+    font-size: 1vw;
+    border:2px solid black;
+    
+    
+    .subSection__img{
+        height: 10vw;
+        background-color: rgba(0, 0, 0, 0.733);
+    }
+    .subSection__text{
+        padding:0 2vw;
+        margin: 0;
+        font-size: 1vw;
+        span{
+            color:red
+        }
+    }
+}

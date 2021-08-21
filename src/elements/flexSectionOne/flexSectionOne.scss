@@ -1,0 +1,22 @@
+.flexSectionOne{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 97vw;
+    margin-top: 2vw;
+
+    :first-child{
+        margin-right: 2vw;
+    }
+
+    .flexSectionOne__elements{
+        border: 2px rgb(255, 217, 3) solid;
+        border-radius: 5px;
+        flex-grow: 1;
+        height: 11vw;
+        color:white;
+        font-size: 5vw;
+        text-align: center;
+        
+    }
+}

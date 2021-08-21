@@ -16,6 +16,14 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
        template: './src/index.pug',
        filename: "index.html"
      }),
+     new HtmlWebpackPlugin({
+      template: './src/main/grid/grid.pug',
+      filename: "grid.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/main/flex/flex.pug',
+      filename: "flex.html"
+    }),
      new MiniCssExtractPlugin({
        
      })

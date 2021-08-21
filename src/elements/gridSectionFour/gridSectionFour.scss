@@ -1,0 +1,42 @@
+.gridSectionFour{
+    display: grid;
+    width: 97vw;
+    margin-top: 2vw;
+    grid-template-rows: 5vw 7vw 22vw;
+    color: white;
+  
+    .gridSectionFour__buttonElement{
+        font-size: 1vw;
+        width: fit-content;
+        height: 50px;
+        padding: 0 3vw;
+        border: 3px solid;
+        border-radius: 20px;
+        background-color: transparent;
+        border-color: rgb(0, 217, 255);
+        color: rgb(0, 217, 255);
+        &:hover{
+            border-color: white;
+            color: white;
+        }
+        justify-self: right;
+    }
+
+    .gridSectionFour__textElement{
+        font-size: 10vw;
+        justify-self: center;
+        margin: 0;
+        -webkit-text-stroke: 0.1vw #ffffff;
+        mix-blend-mode: difference;
+        color: black;
+        z-index: -2;
+
+    }
+    .gridSectionFour__subElement{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 2vw;
+    }
+}
+
+    
